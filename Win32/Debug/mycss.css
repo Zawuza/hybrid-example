@@ -1,5 +1,9 @@
-body {
-  height: 100vh;
+* {
+  box-sizing: content-box;
+}
+
+html, body, div, nav {
+  height: 100%;
 }
 
 textarea {

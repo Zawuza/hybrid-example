@@ -1,9 +1,10 @@
-* {
+html {
   box-sizing: content-box;
 }
 
 html, body, div, nav {
   height: 100%;
+  overflow: hidden;
 }
 
 textarea {

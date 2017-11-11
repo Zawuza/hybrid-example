@@ -9,11 +9,11 @@
 <body>
     <script>
         function openClick() {
-            alert("open!");
+            window.location.href = "delphi:OpenFile()";
         }
 
         function saveClick() {
-            alert("save!");
+            window.location.href = "delphi:SaveFile('" + document.getElementById("txtx").innerText + "')";
         }
         function aboutClick() {
             alert("Delphi hybrid application example written by Andrei Aleksandrov");
@@ -25,11 +25,10 @@
                 <a class="nav-link" href="#" onclick="openClick()">Open</a>
                 <a class="nav-link" href="#" onclick="saveClick()">Save</a>
                 <a class="nav-link" href="#" onclick="aboutClick()">About</a>
-                <div class="magic"></div>
             </nav>
         </div>
         <div class="col-11">
-            <textarea></textarea>
+            <textarea id="txtx"></textarea>
         </div>
     </div>
 
